@@ -462,17 +462,83 @@ button{
     /* text-align: left; */
 }
 
+.promo{
+    background-image: url(../images/promo.jpg);
+    padding: 140px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.promo__inner{
+    display: flex;
+    align-items: center;
+}
 
+.promo__text{
+    font-size: 40px;
+    font-family: 'Yeseva One', cursive;
+    color: #fff;
+    padding-left: 56px;
+    max-width: 765px;
+    margin-right: 110px;
+}
 
+.promo__link{
+    color: #272727;
+    background-color: #FFBD59;
+    display: inline-block;
+    padding: 14px 25px 12px;
+}
 
+.contacts{
+    padding: 150px 0 50px;
+}
 
+.contacts__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.form{
+    background-color: #fff;
+    width: 664px;
+    padding: 75px 42px 67px;
+}
 
+.form__title{
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
 
+.form__imput{
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    color: #000;
+}
 
+.form__imput::placeholder{
+    color: #B3B3B3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
 
-
+.form__btn{
+    background-color: #FFBD59;
+    font-family: Comfortaa;
+    font-size: 14px;
+    color: #272727;
+    margin-top: 36px;
+    padding: 17px 34px;
+}
 
 
 .footer{
@@ -566,6 +632,16 @@ button{
     }
     .certificotes__content .swiper-pagination{
         text-align: center;
+    }
+    .promo__link{
+        min-width: 135px;
+        text-align: center;
+    }
+    .promo__text{
+        padding-left: 0;
+    }
+    .contacts__img{
+        width: 335px;
     }
     
 }
@@ -740,6 +816,31 @@ button{
     .feedback__item-content{
         padding-bottom: 45px;
     }
+    .promo__text{
+        font-size: 15px;
+    }
+    promo__link{
+        font-size: 12px;
+    }
+    .promo{
+        padding: 67px 0;
+    }
+    .contacts__img{
+        width: 187px;
+        object-fit: cover;
+    }
+    .form{
+        width: 440px;
+        gap: 0 20px;
+        padding: 30px 22px;
+    }
+    .form__title{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .form__btn{
+        margin-top: 10px;
+    }
 
 }
 
@@ -879,6 +980,18 @@ button{
         width: 415px;
         margin: 0 auto;
     }
+    .promo{
+        padding: 42px 0;
+    }
+    .contacts__img{
+        display: none;
+    }
+    .form__imput::placeholder{
+        font-size: 10px;
+    }
+    .contacts{
+        padding-top: 50px;
+    }
 }
 
 
@@ -1016,6 +1129,9 @@ button{
         margin: 0 auto;
         left: 0;
         max-width: 100px;
+    }
+    .promo__text{
+        margin-right: 50px;
     }
 }
 
