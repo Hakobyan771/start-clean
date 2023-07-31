@@ -462,6 +462,46 @@ button{
     /* text-align: left; */
 }
 
+.ocordeon{
+    
+}
+
+.ocordeon__item{
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.ocordeon__title{
+    font-family: 'Yeseva One', cursive;
+    font-size: 16px;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    padding: 16px 50px 16px 13px;
+    position: relative;
+}
+
+.ocordeon__title::after{
+    content: "";
+    background-image: url(../images/arrow.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 26px;
+    top: 17px;
+}
+
+.ocardion__text{
+     opacity: 0;
+     max-height: 0;
+    padding: 20px 40px;
+}
+
+.ocardion__text .ocordeon__text--visible{
+    opacity: 1;
+}
+
 .promo{
     background-image: url(../images/promo.jpg);
     padding: 140px 0;

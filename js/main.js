@@ -41,3 +41,39 @@ const swiperOne = new Swiper('.feedback__slider', {
   
 
   });
+
+  
+ const ocordeon = document.querySelector('.ocordeon');
+ const ocordeonTitles = ocordeon.querySelectorAll('.ocordeon__title');
+
+ ocordeonTitles.forEach.call(ocordeonTitles, function (ocordeonTitle){
+  ocordeonTitle.addEventListener('click', function() {
+
+     const currentText = ocordeonTitle.parentElement.querySelector('.ocardion__text');
+
+    ocordeonTitle.classList.toggle('ocardeon__title--active');
+    currentText.classList.toggle('ocordeon__text--visible');
+
+    if (currentText.classList.contains('ocordeon__text--visible')){
+      currentText.style.maxHeight = currentText.scrollHeight + 'px'
+    } else{
+      currentText.style.maxHeight = null
+    }
+   
+    
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
